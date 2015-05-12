@@ -8,7 +8,7 @@ class CalculationsController < ApplicationController
 
   def sqrt
     @number=params["num"].to_i
-    @number_sqrt=@number.sqrt.to_i
+    @sqrt=Math.sqrt(@number).to_i
   end
 
   def pmt
